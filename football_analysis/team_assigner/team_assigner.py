@@ -9,7 +9,7 @@ class TeamAssigner:
         # Reshape the image to 2D array
         image_2d = image.reshape(-1,3)
 
-        # Preform K-means with 2 clusters
+        # Preform K-means with 2 clusters, here 
         kmeans = KMeans(n_clusters=2, init="k-means++",n_init=1)
         kmeans.fit(image_2d)
 

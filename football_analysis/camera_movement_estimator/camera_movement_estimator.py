@@ -95,5 +95,5 @@ class CameraMovementEstimator():
             frame = cv2.putText(frame,f"Camera Movement Y: {y_movement:.2f}",(10,60), cv2.FONT_HERSHEY_SIMPLEX,1,(0,0,0),3)
 
             output_frames.append(frame) 
-
-        return output_frames
+            print("done")
+        return output_frames 
